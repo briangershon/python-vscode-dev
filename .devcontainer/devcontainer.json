@@ -1,0 +1,38 @@
+{
+  "name": "Python Development Environment",
+  "build": {
+    "context": "..",
+    "dockerfile": "../Dockerfile"
+  },
+  "runArgs": ["--env-file", "${localWorkspaceFolder}/.env"],
+  "customizations": {
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "python.defaultInterpreterPath": "/usr/local/bin/python",
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": false,
+      "python.linting.ruffEnabled": true,
+      "python.analysis.typeCheckingMode": "strict",
+      "python.languageServer": "Pylance",
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "ms-python.black-formatter",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "ms-python.pyright",
+        "njpwerner.autodocstring",
+        "tamasfe.even-better-toml",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
