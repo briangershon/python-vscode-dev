@@ -6,21 +6,23 @@
   },
   "runArgs": ["--env-file", "${localWorkspaceFolder}/.env"],
   "customizations": {
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash",
-      "python.defaultInterpreterPath": "/usr/local/bin/python",
-      "python.linting.enabled": true,
-      "python.linting.pylintEnabled": false,
-      "python.linting.ruffEnabled": true,
-      "python.analysis.typeCheckingMode": "strict",
-      "python.languageServer": "Pylance",
-      "editor.defaultFormatter": "ms-python.black-formatter",
-      "editor.formatOnSave": true,
-      "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-      }
-    },
     "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.ruffEnabled": true,
+        "python.analysis.typeCheckingMode": "basic",
+        "python.languageServer": "Pylance",
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+          },
+          "editor.defaultFormatter": "ms-python.black-formatter"
+        }
+      },
       "extensions": [
         "ms-vscode-remote.remote-containers",
         "ms-python.black-formatter",
