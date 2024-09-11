@@ -15,9 +15,9 @@ Load environment variables via `.env` file.
 - install [Docker](https://www.docker.com/get-started)
 - install [VSCode](https://code.visualstudio.com/download)
 
-### Customize your Python project
+### Setup
 
-- set your env variables by copying `.env.example` to `.env` and fill in the values
+- **Important: You must create an `.env` file by copying `.env.example` to `.env` and filling in the values for the dev container to run**
 - add your Python packages to `requirements.txt`
 
 ### Open your project in VSCode
@@ -27,7 +27,7 @@ ssh-add ~/.ssh/id_rsa   # to share your git credentials with container
 code .                  # open project in VSCode
 ```
 
-In VSCode, choose "Reopen in Container" to fire up container.
+In VSCode, choose "Reopen in Container" to fire up container. Ensure you setup an `.env` file before launching dev container.
 
 Open up a terminal in VSCode.
 
