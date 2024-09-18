@@ -33,7 +33,7 @@ Open up a terminal in VSCode.
 
 Run `env` to verify env vars look good.
 
-`python app.py`
+`python src/app.py`
 
 ## Running a Jupyter Notebook
 
