@@ -1,1 +1,3 @@
-import example
+from example import run
+
+run()
