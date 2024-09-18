@@ -78,9 +78,7 @@ app = workflow.compile()
 
 display(Image(app.get_graph().draw_png()))  # type: ignore
 
-# Run the graph
-for output in app.stream({"prompt": "", "is_color": False, "result": ""}):
-    pass
 
-# Example usage:
-# This will run until a color is mentioned in the prompt
+def run():
+    for output in app.stream({"prompt": "", "is_color": False, "result": ""}):
+        pass
